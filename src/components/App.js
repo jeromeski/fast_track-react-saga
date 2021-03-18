@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux';
+import { getUsersRequest } from '../actions/users';
 
-const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+
+const fetchUsers = fetchUserAction => {
+  useEffect(() => {
+    fetchUserAction()
+  }, [])
 }
 
-export default App
+const App = ({ getUsersRequest, users }) => {
+
+  fetchUsers(getUsersRequest)
+
+  const REACT_VERSION = React.version;
+  console.log(users)
+
+	return <div>React version: {REACT_VERSION}</div>;
+};
+
+export default connect(
+	({ users }) => ({ users }),
+	{ getUsersRequest }
+)(App);

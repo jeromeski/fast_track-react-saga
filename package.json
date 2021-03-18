@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.17.1",
-    "bootstrap": "^4.2.1",
-    "jquery": "^3.3.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-redux": "^5.1.1",
-    "react-scripts": "^2.1.3",
-    "reactstrap": "^6.5.0",
-    "redux": "^3.7.2",
-    "redux-saga": "^0.16.2"
+    "axios": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "react-scripts": "latest",
+    "reactstrap": "latest",
+    "redux": "latest",
+    "redux-saga": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,5 +25,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.9"
+  }
 }
