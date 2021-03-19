@@ -6,6 +6,7 @@
     "axios": "latest",
     "bootstrap": "latest",
     "jquery": "latest",
+    "random-int": "^2.0.1",
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "latest",
